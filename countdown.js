@@ -29,7 +29,7 @@ const countDownTimer = function (id, date) {
       String(milliseconds).padStart(3, "0");
   }
 
-  timer = setInterval(showRemaining, 50); // 0.05초마다 갱신
+  timer = setInterval(showRemaining, 67); // 0.05초마다 갱신
 }
 
 countDownTimer('until_application', '7/11/2025');
