@@ -24,8 +24,8 @@ const countDownTimer = function (id, date) {
     // 화면에 표시
     document.getElementById(id).textContent =
       hours + ':' +
-      minutes + ':' +
-      seconds + ':' +
+      String(minutes).padStart(2, "0") + ':' +
+      String(seconds).padStart(2, "0") + ':' +
       String(milliseconds).padStart(3, "0");
   }
 
