@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html lang = ko>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <title>
-        DEAD HEAT
-    </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEAD HEAT</title>
+  <style>
+    @font-face {
+	    font-family: 'Pretendard';
+	    font-weight: 45 920;
+	    font-style: normal;
+	    font-display: swap;
+	    src: url('PretendardVariable.woff2') format('woff2-variations');
+    }
+    @font-face {
+        font-family: 'neurimbo';
+        src: url('neurimboGothicRegular.otf') format('opentype');
+    }   q   
+
+
+    html, body {
+        background-color: #0D0D0D;
+        height: 100%;
+        margin: 0;
+    }
+
+    /* 로고 영역 */
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45vh;
+    }
+
+    .logo img {
+        width: 35%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .deco-text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color:#F21905;
+        font-family: 'Pretendard';
+        font-weight: 200;
+        font-size: 0.7rem;
+        letter-spacing: 0.5em;
+        line-height: 200%;
+        margin-top: -1rem; 
+        margin-bottom: 2rem;
+    }
+
+    /* 카운트다운 */
+    .countdown-clock h2 {
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Pretendard';
+        font-weight: 800;
+        height: 0;
+        font-size: 4.5rem;
+        letter-spacing: 0;
+    }
+    
+  </style>
 </head>
 <body>
-    <p> countdown </p>
-    <section class="contdown_clock">
+    <div class="logo">
+        <img src="LOGO_white.png" alt="DEAD HEAT LOGO" />
+    </div>
+    <div class = "deco-text">
+        <p> 120 hours <br/>
+            6000 km <br/>
+            / <br/>
+            DEAD HEAT </p>
+    </div>
 
-    </section>
+    <div class="countdown-clock">
+        <h2 id="until_application"></h2>
+        <script src="countdown.js"></script>
+    </div>
 </body>
 </html>
