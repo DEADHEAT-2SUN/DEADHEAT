@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = ko>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        DEAD HEAT
+    </title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard';
+            font-weight: 45 920;
+            font-style: normal;
+            font-display: swap;
+            src: url('PretendardVariable.woff2') format('woff2-variations');
+        }
+        @font-face {
+            font-family: 'neurimbo';
+            src: url('neurimboGothicRegular.otf') format('opentype');
+        }   
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body, li {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: black;
+            color: whitesmoke;
+            font-family: 'Pretendard';
+            list-style: none;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45vh;
+        }
+
+        .logo img {
+            width: 35%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* 메뉴 바 */
+        .nav > ul > li {
+            display: inline-block;
+            width: calc(100% / 5);
+        }
+        .nav > ul {
+            text-align: center;
+            margin: 0 30px;
+        }
+        .nav > ul > li > a {
+            color: inherit;
+            font-family: inherit;
+            font-weight: 200;
+            font-size: 1rem;
+            letter-spacing: 0.7em;
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+        .nav > ul > li:hover > a {
+            color: #F21905;
+            font-weight: 700;
+        }
+
+        .inline-grid {
+            font-size: 0;
+            vertical-align: top;
+        }
+
+        /* 텍스트 */
+        .deco-text{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color:#F21905;
+            font-family: 'Pretendard';
+            font-weight: 200;
+            font-size: 0.7rem;
+            letter-spacing: 0.5em;
+            line-height: 200%;
+            margin-top: 4rem; 
+            margin-bottom: 4rem;
+        }
+
+        /* 카운트다운 */
+        .countdown-clock h2 {
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Pretendard';
+            font-variant-numeric: tabular-nums;
+            font-weight: 800;
+            height: 0;
+            font-size: 4.5rem;
+            letter-spacing: 0;
+        }   
+
+        /* SNS 계정 링크 */
+        .footer {
+            margin-top: 10rem;
+        }
+        .footer > ul{
+            text-align: center;
+            padding: 0%;
+            margin: 0%;
+        }
+        .footer > ul > li {
+            display: inline-block;
+            margin: 0 10px;
+            list-style: none;
+        }
+        .footer > ul > li > a > img {
+            width: 5vh;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                height: 30vh; /* 로고 영역 높이 축소 */
+            }
+
+            .logo img {
+                width: 75%; /* 로고 이미지 좀 더 크게 */
+            }
+
+            .nav > ul > li {
+                width: calc(100% / 4);
+            }
+            .nav > ul {
+                margin: 0 0px; /* 마진 조정 */
+            }
+
+            .deco-text {
+                font-size: 0.5rem;      /* 글자 작게 */
+                letter-spacing: 0.3em;  /* 자간 좁게 */
+                line-height: 150%;      /* 줄 간격 좁게 */
+                margin-top: -0.5rem;    /* 마진 약간 조정 */
+                margin-bottom: 1rem;
+                padding: 0 10px;        /* 좌우 약간 여백 */
+            }
+
+            .countdown-clock h2 {
+                font-size: 2.5rem;      /* 폰트 크기 축소 */
+                height: auto;           /* 높이 자동 조절 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="LOGO_white.png" alt="DEAD HEAT LOGO" />
+    </div>
+
+    <hr>
+
+    <div class="nav">
+        <ul class="inline-grid">
+            <li><a class="menu" href="">NOTIcE:</a></li>
+            <li><a class="menu" href="">WoRLD:</a></li>
+            <li><a class="menu" href="">RuLEs:</a></li>
+            <li><a class="menu" href="">JoIN uS:</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="deco-text">
+        <p> 120 hours <br/>
+            6000 km <br/>
+            / <br/>
+            DEAD HEAT</p>
+    </div>
+
+    <div class="countdown-clock">
+        <h2 id="until_application"></h2>
+        <script src="countdown.js"></script>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li><a href="https://x.com/DEADHEAT_2SUN">
+                <img src="TWITTER-ICON.png" alt="TWITTER ICON" /></a>
+            </li>
+            <li><a href="">
+                <img src="KAKAOTALK-ICON.png" alt="KAKAOTALK ICON" /></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
