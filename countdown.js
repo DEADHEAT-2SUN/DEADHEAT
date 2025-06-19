@@ -11,7 +11,7 @@ const countDownTimer = function (id, date) {
 
     if (distDt < 0) {
       clearInterval(timer);
-      document.getElementById(id).textContent = '해당 이벤트가 종료 되었습니다!';
+      document.getElementById(id).textContent = '신청 접수 시작';
       return;
     }
 
