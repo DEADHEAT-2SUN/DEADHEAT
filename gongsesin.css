@@ -84,7 +84,27 @@
        color: #F21905;
         font-weight: 700;
     }
+    .nav > ul > li > b {
+        color: inherit;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 0.7rem;
+        letter-spacing: 0.5rem;
+        display: block;
+        padding-bottom: 0.5rem;
+    }
 
+    .nav > ul > li > c {
+        color: inherit;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 0.7rem;
+        letter-spacing: 0.5rem;
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+    
+    
     .inline-grid {
         font-size: 0;
         vertical-align: top;
@@ -98,10 +118,10 @@
         color:#F21905;
         font-family: 'Pretendard';
         font-weight: 200;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         letter-spacing: 0.5em;
         line-height: 200%;
-        margin-top: 4rem; 
+        margin-top: 3rem; 
         margin-bottom: 4rem;
    }
        /* 카운트다운 */
@@ -136,6 +156,7 @@
         width: 5vh;
     }
 
+
     @media (max-width: 600px) {
         .logo {
             display: flex;
@@ -143,33 +164,48 @@
         }
 
         .logo img {
-            width: 75%; /* 로고 이미지 좀 더 크게 */
+            width: 75vw; /* 로고 이미지 좀 더 크게 */
         }
 
         .nav > ul {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            padding: 1rem 0;
+            padding: 0.2rem 0;
             margin: 0 1rem;
         }
 
         .nav > ul > li {
             width: 25%;
             text-align: center;
-            margin: 0.3rem 0;
+            margin: 0 0;
         }
 
         .nav > ul > li > a {
             font-size: 0.9rem;
-            padding: 0.5rem 0;
+            letter-spacing: 0.2rem;
+            padding: 0.1rem 0;
+        }
+
+        
+        .nav > ul > li > b {
+            font-weight: 200;
+            font-size: 0.5rem; 
+            letter-spacing: 0.1rem;
+            padding: 0 0;
+        }
+
+        .nav > ul > li > c {
+            font-weight: 200;
+            font-size: 0.5rem; 
+            letter-spacing: 0.05rem;
+            padding: 0 0;
         }
 
         .deco-text {
-            font-size: 0.5rem;      /* 글자 작게 */
+            font-size: 0.6rem;      /* 글자 작게 */
             letter-spacing: 0.3em;  /* 자간 좁게 */
             line-height: 150%;      /* 줄 간격 좁게 */
-            margin-top: -0.5rem;    /* 마진 약간 조정 */
+            margin-top: 2rem;    /* 마진 약간 조정 */
             margin-bottom: 1rem;
             padding: 0 10px;        /* 좌우 약간 여백 */
         }
