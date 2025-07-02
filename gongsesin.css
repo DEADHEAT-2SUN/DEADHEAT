@@ -138,30 +138,31 @@
 
     @media (max-width: 600px) {
         .logo {
+            display: flex;
             height: 30vh; /* 로고 영역 높이 축소 */
         }
 
         .logo img {
-            width: 90%; /* 로고 이미지 좀 더 크게 */
+            width: 75%; /* 로고 이미지 좀 더 크게 */
         }
 
         .nav > ul {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+            margin: 0 1rem;
         }
 
         .nav > ul > li {
-            width: auto;
-            margin: 5px 10px;
+            width: 25%;
+            text-align: center;
+            margin: 0.3rem 0;
         }
 
         .nav > ul > li > a {
-            font-size: 0.8rem;
-            letter-spacing: 0.3em;
-            padding: 8px 16px;
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
         }
 
         .deco-text {
